@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apa Pengertian Dari Stdout Pada Daemon - BELAJAR</title>
+    <meta name="description" content="Apa Pengertian Dari Stdout Pada Daemon, , , , , , , 0, , , , , , 0, apa-pengertian-dari-stdout-pada-daemon, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Apa Pengertian Dari Stdout Pada Daemon - BELAJAR" />
+    <meta property="og:description" content="Apa Pengertian Dari Stdout Pada Daemon, , , , , , , 0, , , , , , 0, apa-pengertian-dari-stdout-pada-daemon, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Apa Pengertian Dari Stdout Pada Daemon - BELAJAR" />
+    <meta name="twitter:description" content="Apa Pengertian Dari Stdout Pada Daemon, , , , , , , 0, , , , , , 0, apa-pengertian-dari-stdout-pada-daemon, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://edukasikita.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://edukasikita.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://edukasikita.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://edukasikita.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://edukasikita.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://edukasikita.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://edukasikita.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://edukasikita.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://edukasikita.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://edukasikita.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Apa Pengertian Dari Stdout Pada Daemon</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">AnggaPinadhi</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Apa+Pengertian+Dari+Stdout+Pada+Daemon" alt="Apa Pengertian Dari Stdout Pada Daemon">
+                    </div>
+                    <p></p>
+                    <p>pengertian dari Mailer-Daemon?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-dari-mailer-daemon">1.
+                                            pengertian dari Mailer-Daemon?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-di-maksud-dengan-mailer-daemon">2.
+                                            Apa yang di maksud dengan Mailer-Daemon</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-menjalankan-atau-menghentikan-daemon-samba-smbd-dan-nmbd-dapat-diatur-secara-otomatis-melalui-skrip">3.
+                                            untuk menjalankan atau menghentikan daemon samba, smbd dan nmbd dapat diatur secara otomatis melalui skrip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#salah-satu-cara-untuk-mengetahui-kecepatan-akses-internet-yaitu-dengan-memalui-tes-via-web-software-yang-dapat-digunakan-untuk-mengetahui-kecepatan-akses-internet-yang-tepat-adalaha-cc-cleanerb-daem">4.
+                                            salah satu cara untuk mengetahui kecepatan akses internet yaitu dengan memalui tes via web software yang dapat digunakan untuk mengetahui kecepatan akses internet yang tepat adalah
+a cc cleaner
+b daemon tool
+c smadav
+d mrtg</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-berikut-ini-yang-termasuk-operasi-kompresi-linux-adalah-a-catb-tarc-lsd-dfe-tux2-perintah-untuk-melihat-file-pada-linux-adalah-a-manb-lsc-catd-mce-dir3-perintah-cat">5.
+                                            1.	Berikut ini yang termasuk operasi kompresi Linux adalah ....
+a.	cat
+b.	tar
+c.	ls
+d.	df
+e.	tux
+2.	Perintah untuk melihat file pada Linux adalah ....
+a.	man
+b.	ls
+c.	cat
+d.	mc
+e.	dir
+3.	Perintah cat digunakan untuk ....
+a.	melihat file
+b.	melihat katalog
+c.	memaketkan file
+d.	melihat isi file
+e.	meminta bantuan
+4.	Yang dimaksud dengan partisi swap adalah ....
+a.	penampung informasi yang sedang tidak digunakan oleh RAM
+b.	sebagai tempat meng-install Linux
+c.	menyimpan dokumen-dokumen SO Linux
+d.	menjalankan program yang pertama kali saat komputer hidup
+e.	sebagai tempat meng-insatall LILO
+5.	Perintah yang digunakan untuk melihat seluruh isi direktori var adalah ....
+a.	ls –l /var
+b.	ls –al /var
+c.	cd /var
+d.	cat –al /var
+6.	Perintah untuk menghapus direktori yang ada isinya adalah ....
+a.	rm /data
+b.	cp –rf /data
+c.	mv –f /data
+d.	rm –rf /data
+e.	del –rf /data
+7.	Perintah yang digunakan untuk mengetahui posisi partisi pada Linux adalah ....
+a.	fdisk –l
+b.	du
+c.	df
+d.	dir –l
+e.	cd
+8.	Yang dimaksud sistem operasi adalah ....
+a.	penghubungan antara pengguna dengan perangkat keras
+b.	pengatur kinerja komputer
+c.	pengelola seluruh sumber daya yang terdapat pada sistem komputer
+d.	penyedia sekumpulan layanan bagi user
+e.	semua benar
+9.	Linux bersifat freeware yang berarti ....
+a.	sistem operasi berbasis GUI
+b.	sistem operasi berbasis teks
+c.	dapat digunakan setelah membayar royalti
+d.	digunakan dalam angka waktu tertentu
+e.	dapat digunakan secara bebas dan gratis
+10.	System call adalah ....
+a.	cara pemanggilan program aplikasi
+b.	proses loading aplikasi
+c.	pengelola sumber daya komputer
+d.	interface antara user dan sistem operasi
+e.	pemanggilan dial up ke internet
+11.	Bagian manajemen memori yang menangani pemakaian memori dan swap adalah ....
+a.	direktori Linux
+b.	kelebihan Linux
+c.	kernel Linux
+d.	hierarki Linux
+e.	partisi Linux
+12.	Linux dapat di-install melalui beberapa media berikut ini, kecuali ....
+a.	USB Flashdisk
+b.	CDROM
+c.	Network (NFS)
+d.	LAN card
+e.	Floppy disk
+13.	Linux merupakan kepanjangan dari ....
+a.	Linus Minix
+b.	Linus Unix
+c.	Line Tux
+d.	Line Unix
+e.	Linus Mix
+14.	Berikut ini yang merupakan distro Linux live-cd yang dapat dijalankan melalui CD-ROM tanpa instalasi pada harddisk adalah ....
+a.	Ubuntu
+b.	Fedora
+c.	Free BSD
+d.	CentOS
+e.	Knoppix
+15.	Bagian utama sistem operasi adalah ....
+a.	Kernel
+b.	Library
+c.	Shell
+d.	X Windows
+e.	Aplikasi
+16.	Perintah untuk melihat file html atau browser ke net dengan text mode dan dan gambar tidak ditampilkan adalah ....
+a.	lynix file.html
+b.	tar –xvfz filename.tar.gz
+c.	tar –xvf filename.tar
+d.	gunzip filename.gz
+e.	bunzip2 filename.bz2
+17.	Sebagai root, perintah untuk reboot mesin adalah ....
+a.	halt
+b.	hostname
+c.	pwd
+d.	whoami
+e.	rwho -a
+18.	Perintah yang digunakan untuk melihat direktori Home adalah ....
+a.	halt
+b.	hostname
+c.	pwd
+d.	whoami
+e.	rwho -a
+19.	Proses yang dibuat oleh user secara langsung pada terminal interaktif adalah ....
+a.	Foreground
+b.	Batch
+c.	Daemon
+d.	Request
+e.	Ancestor
+20.	Berikut ini yang berisi utilitas sistem dan program aplikasi level tertinggi adalah ....
+a.	/var
+b.	/usr/bin
+c.	/dev
+d.	/etc
+e.	/mnt</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-tentukan-orientation-complication-resolution-coda-dari-teks-berikutex-oblivioneby-h-p-lovecraftwhen-the-last-days-were-upon-me-and-the-ugly-trifles-of-existence-began-to-drive-me-to-m">6.
+                                            Tolong tentukan orientation, complication, resolution, coda dari teks berikut:
+Ex Oblivione
+by H. P. Lovecraft
+When the last days were upon me, and the ugly trifles of existence began to drive me to madness like the small drops of water that torturers let fall ceaselessly upon one spot of their victims body, I loved the irradiate refuge of sleep. In my dreams I found a little of the beauty I had vainly sought in life, and wandered through old gardens and enchanted woods.
+Once when the wind was soft and scented I heard the south calling, and sailed endlessly and languorously under strange stars.
+Once when the gentle rain fell I glided in a barge down a sunless stream under the earth till I reached another world of purple twilight, iridescent arbours, and undying roses.
+And once I walked through a golden valley that led to shadowy groves and ruins, and ended in a mighty wall green with antique vines, and pierced by a little gate of bronze.
+Many times I walked through that valley, and longer and longer would I pause in the spectral half-light where the giant trees squirmed and twisted grotesquely, and the grey ground stretched damply from trunk to trunk, some times disclosing the mould-stained stones of buried temples. And alway the goal of my fancies was the mighty vine-grown wall with the little gate of bronze therein.
+After a while, as the days of waking became less and less bearable from their greyness and sameness, I would often drift in opiate peace through the valley and the shadowy groves, and wonder how I might seize them for my eternal dwelling-place, so that I need no more crawl back to a dull world stript of interest and new colours. And as I looked upon the little gate in the mighty wall, I felt that beyond it lay a dream-country from which, once it was entered, there would be no return.
+So each night in sleep I strove to find the hidden latch of the gate in the ivied antique wall, though it was exceedingly well hidden. And I would tell myself that the realm beyond the wall was not more lasting merely, but more lovely and radiant as well.
+Then one night in the dream-city of Zakarion I found a yellowed papyrus filled with the thoughts of dream-sages who dwelt of old in that city, and who were too wise ever to be born in the waking world. Therein were written many things concerning the world of dream, and among them was lore of a golden valley and a sacred grove with temples, and a high wall pierced by a little bronze gate. When I saw this lore, I knew that it touched on the scenes I had haunted, and I therefore read long in the yellowed papyrus.
+Some of the dream-sages wrote gorgeously of the wonders beyond the irrepassable gate, but others told of horror and disappointment. I knew not which to believe, yet longed more and more to cross for ever into the unknown land; for doubt and secrecy are the lure of lures, and no new horror can be more terrible than the daily torture of the commonplace. So when I learned of the drug which would unlock the gate and drive me through, I resolved to take it when next I awaked.
+Last night I swallowed the drug and floated dreamily into the golden valley and the shadowy groves; and when I came this time to the antique wall, I saw that the small gate of bronze was ajar. From beyond came a glow that weirdly lit the giant twisted trees and the tops of the buried temples, and I drifted on songfully, expectant of the glories of the land from whence I should never return.
+But as the gate swung wider and the sorcery of the drug and the dream pushed me through, I knew that all sights and glories were at an end; for in that new realm was neither land nor sea, but only the white void of unpeopled and illimitable space. So, happier than I had ever dared hope to be, I dissolved again into that native infinity of crystal oblivion from which the daemon Life had called me for one brief and desolate hour.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kenapa-saat-gue-mau-mount-file-iso-tidak-bisa-dimount-dan-ada-tulisan-berkas-tidak-dapat-diakses-di-daemon-tools-lite">7.
+                                            kenapa saat gue mau mount file iso. tidak bisa dimount dan ada tulisan "berkas tidak dapat diakses di daemon tools lite??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-standar-message-passing-interface-dan-standar-parallel-virtual-machine-bekerja-di-atas-jalur-a-tcpipb-lan-net5c-ipxspxd-hub6-aplikasi-untuk-authentikasi-dan-komunikasi-proses-antarkomputer-y">8.
+                                            5. standar message passing interface dan standar parallel virtual machine bekerja di atas jalur.....a.TCP/IPb.LAN NET5C.IPX/SPXd.HUB6. aplikasi untuk authentikasi dan komunikasi proses antarkomputer yaitu....a.program masterb. PVM daemonc. rsh (remote shell)d. Xpvm versi 1.27. Teknik komputasi numerik pada array paralelisme sinkron biasanya bersifat .... a deskriptif b. inovatif c.iteratif d. komunikatif 8. Jenis algoritma yang mendasari kerja BLAST adalah .... a. kristalografi sinar X b. mikroskopi elektron c. penyejajaran sekuens d. spectroscopy NMR 9. Komputasi modern pertama kali digagasi oleh .... a. Prof. Valentina Dagiene b. Michael Faraday c. Luise Pasteur d. John von Neumann 10. Penerapan simulasi komputer secara praktis dengan berbagai bentuk komputasi lainnya untuk menyelesaikan masalah-masalah dalam .... a. satu pokok permasalahan b. bidang ilmu eksak c. berbagai bidang keilmuan d. beberapa kasus rumit 11. Kemajuan teknologi komputer yang dapat berkomunikasi menggunakan jaringan tanpa menggunakan kabel dan mudah dibawa atau berpindah tempat disebut... a.mobile computing b. grid computing c. degree computing d. cloud computing 12. Pada awal penemuan komputer, karena otak manusia mengalami keterbatasan dalam menghitung angka yang jumlahnya bisa berdigit-digit, kemudian menciptakan alat untuk menghitung yang bernama a. sempoa b. sabak c. kalkulator d. batu tulis13. Jenis arsitektur yang menyediakan global addressing sehingga berbagai prosessor memiliki cara pengaksesan memori yang seragam adalah a. shared memoryb. infrastruktur mesin paralelc. Hukum Amdahld. distibuted memory​​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-utama-mtk-suite-daemon-pd-smartphone-android-ap-shane-kehapus-nih-gan">9.
+                                            Fungsi utama MTK suite daemon pd smartphone android ap sh,ane kehapus nih gan???</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#aaa-mikogob-spicebirdthinkfreeguna-menacrimenemukan-polakesamaan-antarmasalah-maupun-dalam-masalah-tersebut-dapat-menggunakan-komponenabstracionb-algoritmike-decomposition-d-pattern-recognition8-ap">10.
+                                            aaa Mikogob SpicebirdThinkFreeGuna menacri/menemukan pola/kesamaan antarmasalah maupun dalam masalah tersebut dapat menggunakan komponenAbstracionb. Algoritmike Decomposition d pattern recognition8 Apilkasi untuk authentikasi dan komunikasi proses antarkomputer adalaha Program master b. PVM daemonc.rsh (remore shell) d Xpvm versi 1 29 Komunikasi antarprosesor menyebabkan terjadinya waktu tunda (jeda), maka penggunaan message passing dilakukandalam frekuensi berskala.Prioritasb Kecilc menengahd besar10. Kedekatan antara nilai vang terbaca dari alat ukur dengan nilai sebenarnya disebutAkurasiKecepatanc kompleksitasd. problemPada sistem kompurasi paralel terdiri dari beberapa unitMemori lokal multikomputerc message passingb. Paralelisme datad. prosesor dan memon12 Penggunaan metode Down Sizzing pada komputasi modern adalah menangani masalah dengan volume berskalaPrioritasb Kecilc menengahd besar13 Prosesor dan memori di dalam mesin paralel dapat dihubungkan (interkoneksi) secaraDinamis tunggal b Sistem memori c statis maupun dinamis d statis saja14 Protokol mount dan NFS bekerja dengan mengunakan RPC dan mengirim informasi melalui protokolUDP dan SPXb TCP dan UDP0 SPX dan IPXd IPX dan UCP​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#samba-daemon-yang-menyediakan-layanan-file-dan-print-untuk-client-dan-menangani-servis-sharing-file-sistem-dan-printer-adalah">11.
+                                            samba daemon yang menyediakan layanan file dan print untuk client dan menangani servis sharing file sistem dan printer adalah, ,,?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#smartphone-laptop-dan-personal-computer-pc-merupakan-beberapa-produk-teknologi-informasi-yang-di-butuh-kan-oleh-konsumen-perangkat-lunak-sistem-yang-mengatur-sumber-daya-dari-perangkat-keras-dan-p">12.
+                                            Smartphone ,laptop, dan personal computer (PC) merupakan beberapa produk teknologi informasi yang di butuh kan oleh konsumen.Perangkat lunak sistem yang mengatur sumber daya dari perangkat keras dan perangkat lunak serta sebagai jurik (daemon) untuk progaram komputer di kenal dengan istilah.....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-%c2%a0%c2%a0%c2%a0%c2%a0program-komputer-yang-berfungsi-sebagai-sarana-interaksi-antara-pengguna-dengan-perangkat-keras-atau-sebagai-penterjemah-perintah-yang-dijalankan-pengguna-komputer-disebut">13.
+                                            1.    Program komputer yang berfungsi sebagai sarana interaksi antara pengguna dengan perangkat keras atau sebagai penterjemah perintah yang dijalankan pengguna komputer disebut  ….A.    HardwareB.     UtilityC.     BrainwareD.    SoftwareE.     Peripheral2.      Pada saat pertama kali computer dihidupkan, maka akan ada proses menyiapkan system operasi disebut ….A.    LoginB.     Log offC.     BootingD.    SurfingE.     Restart3.      Perlindungan pada program komputer mencakup ...A.    source code program dan program aplikasinyaB.     program aplikasi sajaC.     pemilik program komputer sajaD.    sorce code programnya sajaE.     nama program komputer saja4.      Berikut ini yang bukan merupakan Hak Kekayaan Industri adalah …A.    PatenB.     Desain industriC.     Desain tata letak sirkuit terpaduD.    MerekE.     Denah lokasi5.     ￼Yang menunjukkan tabulasi rata kiri pada mistar yaitu .......A.    1B.     6C.     10D.    4E.     86.      Contoh hasil penggunaan dari perintah Strikethrough adalah ....A.    M2             B.     KarbonC.     O2D.    AirE.     Oksigen7.      Menekan tombol Alt + F4 adalah cara singkat (hot key) untuk ....A.    membuka program yang akan dijalankanB.     menyimpan file yang baru dibuatC.     menutup program yang sedang berjalanD.    membuka file dokumenE.     menyisipkan gambar8.      Untuk membuat surat undangan pada banyak orang dipergunakan fasilitas .....A.   Mailing listB.   Mail MergeC.   HypenationD.   Mail boxE.    Mailer daemon￼Gunakan gambar work sheet ini untuk menjawab SOAL NO 9 – 12 !9.      Untuk mengisi sel C4 digunakan fungsi ....A.    =VLOOKUP(B4;$N$3:$Q9;2)B.     =VLOOKUP(B4;$N$3:$Q9;1)C.     =O4D.    =HLOOKUP(B4;$N$3:$Q9;2)E.     =HLOOKUP(B4;$N$3:$Q9;1)10.  Untuk mengisi sel J4 digunakan format …A.    CurrencyB.     AccountingC.     PercentageD.    GeneralE.     Date11.  Apabila rumus yang digunakan benar, sel C4 berisi ….A.    B1         B.     SUNGLAREC.     AFRIKAD.    BUNGAE.     AMERIKA12.  Apabila syarat DISC HARGA 25 %untuk VOL di atas 50 maka rumus yang dipergunakanA.    = IF D4&gt;50 Then writeln “25%” else writeln “0”B.     = IF D4&gt;50Then “25%” else “0”C.     = IF D4&gt;50; “25%”; “0”D.    = IF (D4&gt;50;25%;0)E.     = IF VOL&gt;50, DISC 25%, 013.  ￼Untuk mengisi JAM TERLAMBAT menggunakan rumus .....A.    =HOUR(C6-$A$3)B.     =MINUTE(C6-$A$3)C.     =(C6-$A$3)D.    =HOUR($A$3-C6)E.     =$B$6-C6</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-membuat-surat-undangan-pada-banyak-orang-dipergunakan-fasilitas-a-mailing-listb-mail-mergec-hypenationd-mail-boxe-mailer-daemon">14.
+                                            Untuk membuat surat undangan pada banyak orang dipergunakan fasilitas .....
+A. Mailing list
+B. Mail Merge
+C. Hypenation
+D. Mail box
+E. Mailer daemon</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mohon-bantuan-nyadisini-saya-sudah-download-docker-dari-xubuntu-lalu-saya-menjalankan-perintah-sudo-service-docker-start-sudo-dockerd-disini-muncul-failed-to-start-daemon-pid-file-found-ensur">15.
+                                            Mohon bantuan nya
+disini saya sudah download docker dari xubuntu, lalu saya menjalankan perintah 
+-sudo service docker start 
+-sudo dockerd 
+disini muncul failed to start daemon: pid file found, ensure docker is not running or delete /var/run/docker.pid</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#11-aplikasi-untuk-authentikasi-dan-komunikasi-proses-antarkomputer-adalaha-program-masterb-pvm-daemonc-rsh-remote-shelld-xpvm-versi-1-2jelaskan-dengan-alasanya-%e2%80%8b">16.
+                                            11.aplikasi untuk authentikasi dan komunikasi proses antarkomputer adalah=a.program masterb. PVM daemonc. rsh (remote shell)d. Xpvm versi 1.2jelaskan dengan alasanya ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sistem-operasi-linux-merupakan-sistem-operasi-yang-memiliki-banyak-varian-yang-disebut-a-distrowatchb-distroc-aptd-kernele-daemon%e2%80%8b">17.
+                                            sistem operasi linux merupakan sistem operasi yang memiliki banyak varian yang disebut...a. distrowatchb. distroc. aptd. kernele. daemon​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-menjalankan-atau-menghentikan-daemon-samba-smbd-dan-nmpd-dpt-diatur-dengan-otomatis-melalui-skrip">18.
+                                            untuk menjalankan atau menghentikan Daemon Samba, smbd dan nmpd dpt diatur  dengan otomatis melalui skrip?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tlong-dong-artiinthe-golden-compasslyra-belaquaand-her-daemon-pantalaimonhad-lived-as-an-orphan-in-jordan-collage-for-years-her-only-relative-was-her-uncle-lord-asriel-he-was-a-scientist-and-an-a">19.
+                                            tlong dong artiinthe golden compasslyra belaqua,and her daemon pantalaimon,had lived as an orphan in jordan collage for years. her only relative was her uncle, lord asriel. he was a scientist and an adventurer,and was busy doing his experiment in north pole. therefore, lyra was taken care by the professors and scholars of jordan collage because she had no other place to go. one day lyra overhead the conversation between her uncle and the college senate. it was an extraordinary conversation about a microsco-pic particle,called dust. this particle was said to unite different worlds, and was feared by many who want to destroy it forever. it was what lord asriel experimenting in the north. at the time, she did not know that this conversation would drag her into a dangerous adventure of her faith. soon after that,her uncle was reported missing in the north. and lyra had to leave jordan college to live under the care of a woman named mrs.coulter. at the beginning,she liked her new life,and learned many things as a young girl.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#aplikasi-untuk-otentikasi-dan-komunikasi-proses-antar-komputer-yaitu-a-program-masterb-pvm-daemonc-rush-remote-shelld-xpvm-versi-1-2please-jaawab-dong%e2%80%8b">20.
+                                            aplikasi untuk otentikasi dan komunikasi proses antar komputer yaitu...A. program masterB. pvm daemonC. rush (remote shell)D. Xpvm versi 1.2please jaawab dong​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-berilah-tanda-silang-x-pada-huruf-a-b-c-atau-d1-aplikasi-untuk-authentikasi-dan-komunikasiproses-antarkomputer-yaitu-program-masterb-pvm-daemonc-rsh-remote-shelld-pvm-versi-1-22-bio">21.
+                                            A. Berilah tanda silang (x) pada huruf a, b, c, atau d1. Aplikasi untuk authentikasi dan komunikasiproses antarkomputer yaitu ....program masterb. PVM daemonc.rsh (remote shell)d. (pvm versi 1.22. Bioinformatika yang ditemukan padapertengahan tahun ....a. 1990-an c. 1970 anH. 1980-an d. 1960 an3. Dalam program sekuensial biasa, arraydimanipulasi dengan mempergunakan ....a, komputasi pipelineb. paralelisme sinkronc. partisi dataperulangan bersarang4. Kemampuan para peneliti dan ilmuwandalam memahami dan memanipulasi kodegenetik DNA sangat didukung teknologiinformasi melalui perkembangan hardwaredan software yang berkaitan dengan ....a. produksi perangkat lunakb. pembacaan sekuenc. bioteknologi tradisionalsoola bioteknologi modern5. Komunikasi antar prosesor menyebabkanterjadinya waktu tunda (jeda), makapenggunaan messsage passing dilakukandalam frekuensi berskala ....a. prioritas c. menengahb.kecil        d. besar​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="pengertian-dari-mailer-daemon">
+                            1. pengertian dari Mailer-Daemon?</h2><br />
+                        Mailer daemon itu pesan pemberitahuan dari server bahwa alamat email yang anda tuju tidak benar<br />semoga membantu<br />program untuk pendownloadan , biasanya untuk mempercepat pengunduhan file<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-di-maksud-dengan-mailer-daemon">
+                            2. Apa yang di maksud dengan Mailer-Daemon</h2><br />
+                        <p></p><p><strong>Mailer Daemon</strong> adalah sebuah program yang di pasang pada server layanan email yang bertanggung jawab untuk mengelola email dan mengirimkannya melalui internet. </p><br />
+                                            <h2 class="ez-toc-section" id="untuk-menjalankan-atau-menghentikan-daemon-samba-smbd-dan-nmbd-dapat-diatur-secara-otomatis-melalui-skrip">
+                            3. untuk menjalankan atau menghentikan daemon samba, smbd dan nmbd dapat diatur secara otomatis melalui skrip</h2><br />
+                        /etc/rc.d/init.d/smbUntuk menjalankan atau menghentikan daemon samba, smbd dan nmbd dapat diatur secara otomatis dengan menambahkan skrip berikut di /etc/rc.local:<br /><br />menjalankan:<br />/etc/init.d/samba start<br />/etc/init.d/smbd start<br />/etc/init.d/nmbd start<br /><br />menghentikan:<br />/etc/init.d/samba stop<br />/etc/init.d/smbd stop<br />/etc/init.d/nmbd stop<br /><br />
+                                            <h2 class="ez-toc-section" id="salah-satu-cara-untuk-mengetahui-kecepatan-akses-internet-yaitu-dengan-memalui-tes-via-web-software-yang-dapat-digunakan-untuk-mengetahui-kecepatan-akses-internet-yang-tepat-adalaha-cc-cleanerb-daem">
+                            4. salah satu cara untuk mengetahui kecepatan akses internet yaitu dengan memalui tes via web software yang dapat digunakan untuk mengetahui kecepatan akses internet yang tepat adalah
+a cc cleaner
+b daemon tool
+c smadav
+d mrtg</h2><br />
+                        B. daemon tool kalau tidak salah sih<br /><br />
+                                            <h2 class="ez-toc-section" id="1-berikut-ini-yang-termasuk-operasi-kompresi-linux-adalah-a-catb-tarc-lsd-dfe-tux2-perintah-untuk-melihat-file-pada-linux-adalah-a-manb-lsc-catd-mce-dir3-perintah-cat">
+                            5. 1.	Berikut ini yang termasuk operasi kompresi Linux adalah ....
+a.	cat
+b.	tar
+c.	ls
+d.	df
+e.	tux
+2.	Perintah untuk melihat file pada Linux adalah ....
+a.	man
+b.	ls
+c.	cat
+d.	mc
+e.	dir
+3.	Perintah cat digunakan untuk ....
+a.	melihat file
+b.	melihat katalog
+c.	memaketkan file
+d.	melihat isi file
+e.	meminta bantuan
+4.	Yang dimaksud dengan partisi swap adalah ....
+a.	penampung informasi yang sedang tidak digunakan oleh RAM
+b.	sebagai tempat meng-install Linux
+c.	menyimpan dokumen-dokumen SO Linux
+d.	menjalankan program yang pertama kali saat komputer hidup
+e.	sebagai tempat meng-insatall LILO
+5.	Perintah yang digunakan untuk melihat seluruh isi direktori var adalah ....
+a.	ls –l /var
+b.	ls –al /var
+c.	cd /var
+d.	cat –al /var
+6.	Perintah untuk menghapus direktori yang ada isinya adalah ....
+a.	rm /data
+b.	cp –rf /data
+c.	mv –f /data
+d.	rm –rf /data
+e.	del –rf /data
+7.	Perintah yang digunakan untuk mengetahui posisi partisi pada Linux adalah ....
+a.	fdisk –l
+b.	du
+c.	df
+d.	dir –l
+e.	cd
+8.	Yang dimaksud sistem operasi adalah ....
+a.	penghubungan antara pengguna dengan perangkat keras
+b.	pengatur kinerja komputer
+c.	pengelola seluruh sumber daya yang terdapat pada sistem komputer
+d.	penyedia sekumpulan layanan bagi user
+e.	semua benar
+9.	Linux bersifat freeware yang berarti ....
+a.	sistem operasi berbasis GUI
+b.	sistem operasi berbasis teks
+c.	dapat digunakan setelah membayar royalti
+d.	digunakan dalam angka waktu tertentu
+e.	dapat digunakan secara bebas dan gratis
+10.	System call adalah ....
+a.	cara pemanggilan program aplikasi
+b.	proses loading aplikasi
+c.	pengelola sumber daya komputer
+d.	interface antara user dan sistem operasi
+e.	pemanggilan dial up ke internet
+11.	Bagian manajemen memori yang menangani pemakaian memori dan swap adalah ....
+a.	direktori Linux
+b.	kelebihan Linux
+c.	kernel Linux
+d.	hierarki Linux
+e.	partisi Linux
+12.	Linux dapat di-install melalui beberapa media berikut ini, kecuali ....
+a.	USB Flashdisk
+b.	CDROM
+c.	Network (NFS)
+d.	LAN card
+e.	Floppy disk
+13.	Linux merupakan kepanjangan dari ....
+a.	Linus Minix
+b.	Linus Unix
+c.	Line Tux
+d.	Line Unix
+e.	Linus Mix
+14.	Berikut ini yang merupakan distro Linux live-cd yang dapat dijalankan melalui CD-ROM tanpa instalasi pada harddisk adalah ....
+a.	Ubuntu
+b.	Fedora
+c.	Free BSD
+d.	CentOS
+e.	Knoppix
+15.	Bagian utama sistem operasi adalah ....
+a.	Kernel
+b.	Library
+c.	Shell
+d.	X Windows
+e.	Aplikasi
+16.	Perintah untuk melihat file html atau browser ke net dengan text mode dan dan gambar tidak ditampilkan adalah ....
+a.	lynix file.html
+b.	tar –xvfz filename.tar.gz
+c.	tar –xvf filename.tar
+d.	gunzip filename.gz
+e.	bunzip2 filename.bz2
+17.	Sebagai root, perintah untuk reboot mesin adalah ....
+a.	halt
+b.	hostname
+c.	pwd
+d.	whoami
+e.	rwho -a
+18.	Perintah yang digunakan untuk melihat direktori Home adalah ....
+a.	halt
+b.	hostname
+c.	pwd
+d.	whoami
+e.	rwho -a
+19.	Proses yang dibuat oleh user secara langsung pada terminal interaktif adalah ....
+a.	Foreground
+b.	Batch
+c.	Daemon
+d.	Request
+e.	Ancestor
+20.	Berikut ini yang berisi utilitas sistem dan program aplikasi level tertinggi adalah ....
+a.	/var
+b.	/usr/bin
+c.	/dev
+d.	/etc
+e.	/mnt</h2><br />
+                        15.jawabannya:d.x windows<br />
+                                            <h2 class="ez-toc-section" id="tolong-tentukan-orientation-complication-resolution-coda-dari-teks-berikutex-oblivioneby-h-p-lovecraftwhen-the-last-days-were-upon-me-and-the-ugly-trifles-of-existence-began-to-drive-me-to-m">
+                            6. Tolong tentukan orientation, complication, resolution, coda dari teks berikut:
+Ex Oblivione
+by H. P. Lovecraft
+When the last days were upon me, and the ugly trifles of existence began to drive me to madness like the small drops of water that torturers let fall ceaselessly upon one spot of their victims body, I loved the irradiate refuge of sleep. In my dreams I found a little of the beauty I had vainly sought in life, and wandered through old gardens and enchanted woods.
+Once when the wind was soft and scented I heard the south calling, and sailed endlessly and languorously under strange stars.
+Once when the gentle rain fell I glided in a barge down a sunless stream under the earth till I reached another world of purple twilight, iridescent arbours, and undying roses.
+And once I walked through a golden valley that led to shadowy groves and ruins, and ended in a mighty wall green with antique vines, and pierced by a little gate of bronze.
+Many times I walked through that valley, and longer and longer would I pause in the spectral half-light where the giant trees squirmed and twisted grotesquely, and the grey ground stretched damply from trunk to trunk, some times disclosing the mould-stained stones of buried temples. And alway the goal of my fancies was the mighty vine-grown wall with the little gate of bronze therein.
+After a while, as the days of waking became less and less bearable from their greyness and sameness, I would often drift in opiate peace through the valley and the shadowy groves, and wonder how I might seize them for my eternal dwelling-place, so that I need no more crawl back to a dull world stript of interest and new colours. And as I looked upon the little gate in the mighty wall, I felt that beyond it lay a dream-country from which, once it was entered, there would be no return.
+So each night in sleep I strove to find the hidden latch of the gate in the ivied antique wall, though it was exceedingly well hidden. And I would tell myself that the realm beyond the wall was not more lasting merely, but more lovely and radiant as well.
+Then one night in the dream-city of Zakarion I found a yellowed papyrus filled with the thoughts of dream-sages who dwelt of old in that city, and who were too wise ever to be born in the waking world. Therein were written many things concerning the world of dream, and among them was lore of a golden valley and a sacred grove with temples, and a high wall pierced by a little bronze gate. When I saw this lore, I knew that it touched on the scenes I had haunted, and I therefore read long in the yellowed papyrus.
+Some of the dream-sages wrote gorgeously of the wonders beyond the irrepassable gate, but others told of horror and disappointment. I knew not which to believe, yet longed more and more to cross for ever into the unknown land; for doubt and secrecy are the lure of lures, and no new horror can be more terrible than the daily torture of the commonplace. So when I learned of the drug which would unlock the gate and drive me through, I resolved to take it when next I awaked.
+Last night I swallowed the drug and floated dreamily into the golden valley and the shadowy groves; and when I came this time to the antique wall, I saw that the small gate of bronze was ajar. From beyond came a glow that weirdly lit the giant twisted trees and the tops of the buried temples, and I drifted on songfully, expectant of the glories of the land from whence I should never return.
+But as the gate swung wider and the sorcery of the drug and the dream pushed me through, I knew that all sights and glories were at an end; for in that new realm was neither land nor sea, but only the white void of unpeopled and illimitable space. So, happier than I had ever dared hope to be, I dissolved again into that native infinity of crystal oblivion from which the daemon Life had called me for one brief and desolate hour.</h2><br />
+                        orientation itu terdapat di paragraf pertama,<br />coda : so, happier than i had ever dared ho to be, i dissolved again......... sampai kalimat terakhir.<br /><br />
+                                            <h2 class="ez-toc-section" id="kenapa-saat-gue-mau-mount-file-iso-tidak-bisa-dimount-dan-ada-tulisan-berkas-tidak-dapat-diakses-di-daemon-tools-lite">
+                            7. kenapa saat gue mau mount file iso. tidak bisa dimount dan ada tulisan "berkas tidak dapat diakses di daemon tools lite??</h2><br />
+                        banyak kemungkinan 1. Kemungkinan file iso kamu belum terekstrak dengan baik, 2. Kemungkinan file iso tersebut tidak bisa di ekstrak dengan Daemon Tools versi kamu<br /><br />coba ekstrak ulang kemudian mount lagi.Kemungkinan <br />1. File ISO yang ada mengalami error pada berkasnya<br />2. File ISO nya kurang valid<br /><br />Saran saya , coba kamu menggunakan UltraISO. dan apbila kamu menggunakan Windows 8 / 8.1 kamu juga bisa langsung membukanya tanpa memerlukan aplikasi penduung.<br /><br />
+                                            <h2 class="ez-toc-section" id="5-standar-message-passing-interface-dan-standar-parallel-virtual-machine-bekerja-di-atas-jalur-a-tcpipb-lan-net5c-ipxspxd-hub6-aplikasi-untuk-authentikasi-dan-komunikasi-proses-antarkomputer-y">
+                            8. 5. standar message passing interface dan standar parallel virtual machine bekerja di atas jalur.....a.TCP/IPb.LAN NET5C.IPX/SPXd.HUB6. aplikasi untuk authentikasi dan komunikasi proses antarkomputer yaitu....a.program masterb. PVM daemonc. rsh (remote shell)d. Xpvm versi 1.27. Teknik komputasi numerik pada array paralelisme sinkron biasanya bersifat .... a deskriptif b. inovatif c.iteratif d. komunikatif 8. Jenis algoritma yang mendasari kerja BLAST adalah .... a. kristalografi sinar X b. mikroskopi elektron c. penyejajaran sekuens d. spectroscopy NMR 9. Komputasi modern pertama kali digagasi oleh .... a. Prof. Valentina Dagiene b. Michael Faraday c. Luise Pasteur d. John von Neumann 10. Penerapan simulasi komputer secara praktis dengan berbagai bentuk komputasi lainnya untuk menyelesaikan masalah-masalah dalam .... a. satu pokok permasalahan b. bidang ilmu eksak c. berbagai bidang keilmuan d. beberapa kasus rumit 11. Kemajuan teknologi komputer yang dapat berkomunikasi menggunakan jaringan tanpa menggunakan kabel dan mudah dibawa atau berpindah tempat disebut... a.mobile computing b. grid computing c. degree computing d. cloud computing 12. Pada awal penemuan komputer, karena otak manusia mengalami keterbatasan dalam menghitung angka yang jumlahnya bisa berdigit-digit, kemudian menciptakan alat untuk menghitung yang bernama a. sempoa b. sabak c. kalkulator d. batu tulis13. Jenis arsitektur yang menyediakan global addressing sehingga berbagai prosessor memiliki cara pengaksesan memori yang seragam adalah a. shared memoryb. infrastruktur mesin paralelc. Hukum Amdahld. distibuted memory​​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>5. d.HUB</p><p>6. c. rsh (remote shell)</p><p>7. d. komunikatif</p><p>8. c. penyejajaran sekuens</p><p>9. d. John von Neumann</p><p>10. a. satu pokok permasalahan </p><p>11. a.mobile computing</p><p>12. c. kalkulator </p><p>13. a. shared memory</p><p></p><p><strong>semoga bermanfaat </strong></p><p><strong>Jawaban:</strong></p><p>5. standar message passing interface dan standar parallel virtual machine bekerja di atas jalur.....</p><p></p><p>jawaban :</p><p><strong>d.HUB</strong></p><p></p><p>6. aplikasi untuk authentikasi dan komunikasi proses antarkomputer yaitu....</p><p></p><p>jawaban :</p><p><strong>c. rsh (remote shell)</strong></p><p></p><p>7. Teknik komputasi numerik pada array paralelisme sinkron biasanya bersifat .... </p><p></p><p>jawaban :</p><p><strong>d. komunikatif</strong> </p><p></p><p>8. Jenis algoritma yang mendasari kerja BLAST adalah .... </p><p></p><p>jawaban :</p><p><strong>c. penyejajaran sekuens</strong> </p><p></p><p>9. Komputasi modern pertama kali digagasi oleh .... </p><p></p><p>jawaban :</p><p><strong>d. John von Neumann</strong></p><p></p><p>10. Penerapan simulasi komputer secara praktis dengan berbagai bentuk komputasi lainnya untuk menyelesaikan masalah-masalah dalam .... </p><p></p><p>jawaban :</p><p><strong>a. satu pokok permasalahan</strong></p><p></p><p>11. Kemajuan teknologi komputer yang dapat berkomunikasi menggunakan jaringan tanpa menggunakan kabel dan mudah dibawa atau berpindah tempat disebut... </p><p></p><p>jawaban :</p><p><strong>a. mobile computing </strong></p><p></p><p>12. Pada awal penemuan komputer, karena otak manusia mengalami keterbatasan dalam menghitung angka yang jumlahnya bisa berdigit-digit, kemudian menciptakan alat untuk menghitung yang bernama </p><p></p><p>jawaban : </p><p><strong>c. kalkulator</strong> </p><p></p><p>13. Jenis arsitektur yang menyediakan global addressing sehingga berbagai prosessor memiliki cara pengaksesan memori yang seragam adalah </p><p></p><p>jawaban :</p><p><strong>a. shared memory</strong></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-utama-mtk-suite-daemon-pd-smartphone-android-ap-shane-kehapus-nih-gan">
+                            9. Fungsi utama MTK suite daemon pd smartphone android ap sh,ane kehapus nih gan???</h2><br />
+                        Untuk menyesuaikan baterai, ingin high kualitas atau low kualitas.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="aaa-mikogob-spicebirdthinkfreeguna-menacrimenemukan-polakesamaan-antarmasalah-maupun-dalam-masalah-tersebut-dapat-menggunakan-komponenabstracionb-algoritmike-decomposition-d-pattern-recognition8-ap">
+                            10. aaa Mikogob SpicebirdThinkFreeGuna menacri/menemukan pola/kesamaan antarmasalah maupun dalam masalah tersebut dapat menggunakan komponenAbstracionb. Algoritmike Decomposition d pattern recognition8 Apilkasi untuk authentikasi dan komunikasi proses antarkomputer adalaha Program master b. PVM daemonc.rsh (remore shell) d Xpvm versi 1 29 Komunikasi antarprosesor menyebabkan terjadinya waktu tunda (jeda), maka penggunaan message passing dilakukandalam frekuensi berskala.Prioritasb Kecilc menengahd besar10. Kedekatan antara nilai vang terbaca dari alat ukur dengan nilai sebenarnya disebutAkurasiKecepatanc kompleksitasd. problemPada sistem kompurasi paralel terdiri dari beberapa unitMemori lokal multikomputerc message passingb. Paralelisme datad. prosesor dan memon12 Penggunaan metode Down Sizzing pada komputasi modern adalah menangani masalah dengan volume berskalaPrioritasb Kecilc menengahd besar13 Prosesor dan memori di dalam mesin paralel dapat dihubungkan (interkoneksi) secaraDinamis tunggal b Sistem memori c statis maupun dinamis d statis saja14 Protokol mount dan NFS bekerja dengan mengunakan RPC dan mengirim informasi melalui protokolUDP dan SPXb TCP dan UDP0 SPX dan IPXd IPX dan UCP​</h2><br />
+                        <p>jawabanya no 12 D </p><p><strong>Penjelasan:</strong></p>maaf klo salah :^)<br />
+                                            <h2 class="ez-toc-section" id="samba-daemon-yang-menyediakan-layanan-file-dan-print-untuk-client-dan-menangani-servis-sharing-file-sistem-dan-printer-adalah">
+                            11. samba daemon yang menyediakan layanan file dan print untuk client dan menangani servis sharing file sistem dan printer adalah, ,,?</h2><br />
+                        samba daemon yang menyediakan <br />layanan file dan print untuk client dan menangani servis sharing file sistem dan printer adalah "Smbd" <strong>Smbd</strong> adalah
+ daemon yang secara nyata menangani servis sharing file sistem dan 
+printer untuk klien<br /><br />
+                                            <h2 class="ez-toc-section" id="smartphone-laptop-dan-personal-computer-pc-merupakan-beberapa-produk-teknologi-informasi-yang-di-butuh-kan-oleh-konsumen-perangkat-lunak-sistem-yang-mengatur-sumber-daya-dari-perangkat-keras-dan-p">
+                            12. Smartphone ,laptop, dan personal computer (PC) merupakan beberapa produk teknologi informasi yang di butuh kan oleh konsumen.Perangkat lunak sistem yang mengatur sumber daya dari perangkat keras dan perangkat lunak serta sebagai jurik (daemon) untuk progaram komputer di kenal dengan istilah.....</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>-hardware = yaitu perangkat keras. seperti pc, laptop, smartphone.</p><p>-software = yaitu perangkat lunak, seperti windows,dll..</p><p></p><p>*cmiiw</p><br />
+                                            <h2 class="ez-toc-section" id="1-%c2%a0%c2%a0%c2%a0%c2%a0program-komputer-yang-berfungsi-sebagai-sarana-interaksi-antara-pengguna-dengan-perangkat-keras-atau-sebagai-penterjemah-perintah-yang-dijalankan-pengguna-komputer-disebut">
+                            13. 1.    Program komputer yang berfungsi sebagai sarana interaksi antara pengguna dengan perangkat keras atau sebagai penterjemah perintah yang dijalankan pengguna komputer disebut  ….A.    HardwareB.     UtilityC.     BrainwareD.    SoftwareE.     Peripheral2.      Pada saat pertama kali computer dihidupkan, maka akan ada proses menyiapkan system operasi disebut ….A.    LoginB.     Log offC.     BootingD.    SurfingE.     Restart3.      Perlindungan pada program komputer mencakup ...A.    source code program dan program aplikasinyaB.     program aplikasi sajaC.     pemilik program komputer sajaD.    sorce code programnya sajaE.     nama program komputer saja4.      Berikut ini yang bukan merupakan Hak Kekayaan Industri adalah …A.    PatenB.     Desain industriC.     Desain tata letak sirkuit terpaduD.    MerekE.     Denah lokasi5.     ￼Yang menunjukkan tabulasi rata kiri pada mistar yaitu .......A.    1B.     6C.     10D.    4E.     86.      Contoh hasil penggunaan dari perintah Strikethrough adalah ....A.    M2             B.     KarbonC.     O2D.    AirE.     Oksigen7.      Menekan tombol Alt + F4 adalah cara singkat (hot key) untuk ....A.    membuka program yang akan dijalankanB.     menyimpan file yang baru dibuatC.     menutup program yang sedang berjalanD.    membuka file dokumenE.     menyisipkan gambar8.      Untuk membuat surat undangan pada banyak orang dipergunakan fasilitas .....A.   Mailing listB.   Mail MergeC.   HypenationD.   Mail boxE.    Mailer daemon￼Gunakan gambar work sheet ini untuk menjawab SOAL NO 9 – 12 !9.      Untuk mengisi sel C4 digunakan fungsi ....A.    =VLOOKUP(B4;$N$3:$Q9;2)B.     =VLOOKUP(B4;$N$3:$Q9;1)C.     =O4D.    =HLOOKUP(B4;$N$3:$Q9;2)E.     =HLOOKUP(B4;$N$3:$Q9;1)10.  Untuk mengisi sel J4 digunakan format …A.    CurrencyB.     AccountingC.     PercentageD.    GeneralE.     Date11.  Apabila rumus yang digunakan benar, sel C4 berisi ….A.    B1         B.     SUNGLAREC.     AFRIKAD.    BUNGAE.     AMERIKA12.  Apabila syarat DISC HARGA 25 %untuk VOL di atas 50 maka rumus yang dipergunakanA.    = IF D4&gt;50 Then writeln “25%” else writeln “0”B.     = IF D4&gt;50Then “25%” else “0”C.     = IF D4&gt;50; “25%”; “0”D.    = IF (D4&gt;50;25%;0)E.     = IF VOL&gt;50, DISC 25%, 013.  ￼Untuk mengisi JAM TERLAMBAT menggunakan rumus .....A.    =HOUR(C6-$A$3)B.     =MINUTE(C6-$A$3)C.     =(C6-$A$3)D.    =HOUR($A$3-C6)E.     =$B$6-C6</h2><br />
+                        1)A.<br />2)D<br /><br />maaf cuma ini<br />
+                                            <h2 class="ez-toc-section" id="untuk-membuat-surat-undangan-pada-banyak-orang-dipergunakan-fasilitas-a-mailing-listb-mail-mergec-hypenationd-mail-boxe-mailer-daemon">
+                            14. Untuk membuat surat undangan pada banyak orang dipergunakan fasilitas .....
+A. Mailing list
+B. Mail Merge
+C. Hypenation
+D. Mail box
+E. Mailer daemon</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. mail merge</p><p><strong>Penjelasan:</strong></p><p>semoga bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="mohon-bantuan-nyadisini-saya-sudah-download-docker-dari-xubuntu-lalu-saya-menjalankan-perintah-sudo-service-docker-start-sudo-dockerd-disini-muncul-failed-to-start-daemon-pid-file-found-ensur">
+                            15. Mohon bantuan nya
+disini saya sudah download docker dari xubuntu, lalu saya menjalankan perintah 
+-sudo service docker start 
+-sudo dockerd 
+disini muncul failed to start daemon: pid file found, ensure docker is not running or delete /var/run/docker.pid</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>Muncul pesan error "failed to start daemon: pid file found, ensure docker is not running or delete /var/run/docker.pid" menunjukkan bahwa terdapat proses Docker yang sedang berjalan atau terdapat berkas pid (process identification) Docker yang masih ada di direktori /var/run. Untuk mengatasi masalah ini, Anda dapat mencoba salah satu dari tindakan berikut:</p><p></p><p>Matikan proses Docker yang sedang berjalan dengan perintah "sudo docker stop [container_id]". Kemudian coba jalankan perintah "sudo service docker start" dan "sudo dockerd" lagi.</p><p></p><p>Hapus berkas pid Docker yang masih ada di direktori /var/run dengan perintah "sudo rm /var/run/docker.pid". Kemudian coba jalankan perintah "sudo service docker start" dan "sudo dockerd" lagi.</p><p></p><p>Restart sistem Anda dan coba jalankan perintah "sudo service docker start" dan "sudo dockerd" lagi setelah sistem booting kembali.</p><p></p><p>Jika masalah masih belum teratasi, Anda dapat mencoba menggunakan perintah "sudo dockerd -D" untuk menjalankan daemon Docker dengan mode debugging dan memperoleh informasi lebih lanjut tentang masalah yang terjadi.</p><br />
+                                            <h2 class="ez-toc-section" id="11-aplikasi-untuk-authentikasi-dan-komunikasi-proses-antarkomputer-adalaha-program-masterb-pvm-daemonc-rsh-remote-shelld-xpvm-versi-1-2jelaskan-dengan-alasanya-%e2%80%8b">
+                            16. 11.aplikasi untuk authentikasi dan komunikasi proses antarkomputer adalah=a.program masterb. PVM daemonc. rsh (remote shell)d. Xpvm versi 1.2jelaskan dengan alasanya ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. program master</p><p><strong>Penjelasan:</strong></p><p>maff kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="sistem-operasi-linux-merupakan-sistem-operasi-yang-memiliki-banyak-varian-yang-disebut-a-distrowatchb-distroc-aptd-kernele-daemon%e2%80%8b">
+                            17. sistem operasi linux merupakan sistem operasi yang memiliki banyak varian yang disebut...a. distrowatchb. distroc. aptd. kernele. daemon​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sistem operasi linux merupakan sistem operasi yang memiliki banyak varian yang disebut: <strong>B. Distro</strong></p><br />
+                                            <h2 class="ez-toc-section" id="untuk-menjalankan-atau-menghentikan-daemon-samba-smbd-dan-nmpd-dpt-diatur-dengan-otomatis-melalui-skrip">
+                            18. untuk menjalankan atau menghentikan Daemon Samba, smbd dan nmpd dpt diatur  dengan otomatis melalui skrip?</h2><br />
+                        Untuk menjalankan dan menghentikan daemon Samba, nmbd dan smbd secaraotomatis kita dapat menjalankan script file “/etc/rc.d/init.d/smb”.<br /><br />semoga membantu : )<br />
+                                            <h2 class="ez-toc-section" id="tlong-dong-artiinthe-golden-compasslyra-belaquaand-her-daemon-pantalaimonhad-lived-as-an-orphan-in-jordan-collage-for-years-her-only-relative-was-her-uncle-lord-asriel-he-was-a-scientist-and-an-a">
+                            19. tlong dong artiinthe golden compasslyra belaqua,and her daemon pantalaimon,had lived as an orphan in jordan collage for years. her only relative was her uncle, lord asriel. he was a scientist and an adventurer,and was busy doing his experiment in north pole. therefore, lyra was taken care by the professors and scholars of jordan collage because she had no other place to go. one day lyra overhead the conversation between her uncle and the college senate. it was an extraordinary conversation about a microsco-pic particle,called dust. this particle was said to unite different worlds, and was feared by many who want to destroy it forever. it was what lord asriel experimenting in the north. at the time, she did not know that this conversation would drag her into a dangerous adventure of her faith. soon after that,her uncle was reported missing in the north. and lyra had to leave jordan college to live under the care of a woman named mrs.coulter. at the beginning,she liked her new life,and learned many things as a young girl.</h2><br />
+                        kompas emaslyra Belaqua , dan Pantalaimon daemon nya , telah hidup sebagai yatim piatu di jordan kolase selama bertahun-tahun . hanya relatif nya pamannya , Lord Asriel . dia adalah seorang ilmuwan dan seorang petualang , dan sedang sibuk melakukan percobaan di kutub utara . Oleh karena itu , lyra adalah diurus oleh profesor dan sarjana dari jordan kolase karena dia tidak punya tempat lain untuk pergi . satu hari lyra overhead percakapan antara pamannya dan senat perguruan tinggi. itu adalah percakapan yang luar biasa tentang partikel microsco - pic , yang disebut debu . partikel ini dikatakan untuk menyatukan dunia yang berbeda, dan ditakuti oleh banyak orang yang ingin menghancurkannya selamanya . itu adalah apa yang Lord Asriel bereksperimen di utara . pada saat itu , dia tidak tahu bahwa percakapan ini akan menyeretnya ke dalam petualangan berbahaya imannya . segera setelah itu , pamannya dilaporkan hilang di utara . dan lyra harus meninggalkan jordan perguruan tinggi untuk hidup di bawah perawatan seorang wanita bernama mrs.coulter . di awal , dia menyukai kehidupan barunya , dan belajar banyak hal sebagai gadis muda .Kompas emas<br />Lyra belaqua, dan pantalaimon daemon nya, telah hidup sebagai seorang 
+yatim piatu di Yordania kolase selama bertahun-tahun. Ia hidup hanya bersama pamannya, Tuhan asriel. Ia adalah seorang ilmuwan dan seorang 
+petualang yang sibuk melakukan eksperimen di Kutub Utara. oleh karena 
+itu, Lyra adalah diurus oleh para profesor dan sarjana Yordania kolase 
+karena dia tidak ada tempat lain untuk pergi. Suatu hari Lyra mendengar 
+percakapan antara pamannya dan Senat perguruan tinggi. Percakapan itu sangat luar biasa 
+percakapan tentang partikel microsco-pic, disebut debu. Partikel ini 
+dikatakan untuk menyatukan dunia yang berbeda, dan ditakuti oleh banyak 
+orang yang ingin menjadi penghancur selamanya. Itu membuat Tuhan asriel 
+bereksperimen di Utara. Pada waktu itu, ia tidak tahu bahwa percakapan 
+ini akan menyeret dirinya ke dalam petualangan yang membahayakan imannya. Setelah itu pamannya dilaporkan hilang di utara. Dan lyra harus 
+meninggalkan yordan perguruan tinggi untuk hidup di bawah perawatan 
+seorang wanita bernama mrs.coulter. Di awal kehidupanny, dia menyukainya kehidupan 
+baru, dan belajar banyak hal seperti seorang gadis muda.
+<br /><br />
+                                            <h2 class="ez-toc-section" id="aplikasi-untuk-otentikasi-dan-komunikasi-proses-antar-komputer-yaitu-a-program-masterb-pvm-daemonc-rush-remote-shelld-xpvm-versi-1-2please-jaawab-dong%e2%80%8b">
+                            20. aplikasi untuk otentikasi dan komunikasi proses antar komputer yaitu...A. program masterB. pvm daemonC. rush (remote shell)D. Xpvm versi 1.2please jaawab dong​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. Program master</p><p><strong>Penjelasan:</strong></p><p>Maaf kalo salah...</p><br />
+                                            <h2 class="ez-toc-section" id="a-berilah-tanda-silang-x-pada-huruf-a-b-c-atau-d1-aplikasi-untuk-authentikasi-dan-komunikasiproses-antarkomputer-yaitu-program-masterb-pvm-daemonc-rsh-remote-shelld-pvm-versi-1-22-bio">
+                            21. A. Berilah tanda silang (x) pada huruf a, b, c, atau d1. Aplikasi untuk authentikasi dan komunikasiproses antarkomputer yaitu ....program masterb. PVM daemonc.rsh (remote shell)d. (pvm versi 1.22. Bioinformatika yang ditemukan padapertengahan tahun ....a. 1990-an c. 1970 anH. 1980-an d. 1960 an3. Dalam program sekuensial biasa, arraydimanipulasi dengan mempergunakan ....a, komputasi pipelineb. paralelisme sinkronc. partisi dataperulangan bersarang4. Kemampuan para peneliti dan ilmuwandalam memahami dan memanipulasi kodegenetik DNA sangat didukung teknologiinformasi melalui perkembangan hardwaredan software yang berkaitan dengan ....a. produksi perangkat lunakb. pembacaan sekuenc. bioteknologi tradisionalsoola bioteknologi modern5. Komunikasi antar prosesor menyebabkanterjadinya waktu tunda (jeda), makapenggunaan messsage passing dilakukandalam frekuensi berskala ....a. prioritas c. menengahb.kecil        d. besar​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. a program master </p><p>2. b 1980-an</p><p>3. d perulangan bersarang</p><p>4. d bioteknologi modern </p><p>5. b kecil</p><p><strong>Penjelasan:</strong></p><p>maaf klo slh </p><p>semoga membantu</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/OLois4WcXIg?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/hakikat-norma-hukum-memiliki-sifat-memaksa-artinya.html">Hakikat Norma Hukum Memiliki Sifat Memaksa Artinya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/permasalahan-pokok-ekonomi-adalah.html">Permasalahan Pokok Ekonomi Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/cara-menjawab-soal-matematika-psikotes.html">Cara Menjawab Soal Matematika Psikotes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/sebutkan-manfaat-infak.html">Sebutkan Manfaat Infak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/contoh-soal-cerdas-cermat-agama-tingkat-smp.html">Contoh Soal Cerdas Cermat Agama Tingkat Smp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/tes-psikotes-kejiwaan-ahm.html">Tes Psikotes Kejiwaan Ahm</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/jual-alat-psikotes-unpad.html">Jual Alat Psikotes Unpad</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/penulis-naskah-film-disebut.html">Penulis Naskah Film Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/pengertian-motivasi-karyawan-dari-luar-negri.html">Pengertian Motivasi Karyawan Dari Luar Negri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/soal-uts-agama-kelas-2-semester-1.html">Soal Uts Agama Kelas 2 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/contoh-soal-soal-psikotes-bank-dan-kunci-jawabannya-pdf.html">Contoh Soal Soal Psikotes Bank Dan Kunci Jawabannya Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/jelaskan-pengertian-dari-a-ikon-b-folder-c-desktop.html">Jelaskan Pengertian Dari A ikon B folder C desktop</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/soal-pts-agama-islam-kelas-1-semester-2.html">Soal Pts Agama Islam Kelas 1 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/perbedaan-tes-akademik-dan-psikotes.html">Perbedaan Tes Akademik Dan Psikotes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/psikotes-mayora.html">Psikotes Mayora</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/pdf-soal-lcc-agama-islam-sd-2017.html">Pdf Soal Lcc Agama Islam Sd 2017</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/sebutkan-cara-memegang-peluru.html">Sebutkan Cara Memegang Peluru</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/sebutkan-contoh-senam-irama.html">Sebutkan Contoh Senam Irama</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/pengertian-dari-mode-special-trait-di-pes-club-manager.html">Pengertian Dari Mode Special Trait Di Pes Club Manager</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://edukasikita.github.io/gerakan-suatu-benda-yang-berputar-pada-porosnya-disebut.html">Gerakan Suatu Benda Yang Berputar Pada Porosnya Disebut</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://edukasikita.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://edukasikita.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://edukasikita.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://edukasikita.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://edukasikita.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
